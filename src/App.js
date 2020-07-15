@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import Navigation from './components/navigation'
+import Navigation from './components/common/navigation'
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import PageRenderer from './page-renderer'
 
