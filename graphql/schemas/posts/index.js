@@ -18,5 +18,5 @@ module.exports = {
         path.resolve(
             __dirname, './posts-schema.graphql'
         )
-    )
+    ).toString()
 }
