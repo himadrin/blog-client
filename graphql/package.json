@@ -1,0 +1,17 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "Koa and GraphQL backend for React blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Himadri Narasimhamurthy",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-koa": "^2.15.1",
+    "graphql-tools": "^6.0.14",
+    "koa": "^2.13.0",
+    "moment": "^2.27.0"
+  }
+}
