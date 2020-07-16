@@ -2,6 +2,8 @@
 @import './navigation';
 @import './masonry-post';
 @import './post-masonry';
+@import './tag-row';
+@import './post-grid';
 @import './home';
 
 html body {
@@ -21,7 +23,7 @@ h1{
 }
 
 .row{
-    margin: 4em 20px;
+    margin: 3em 40px;
 }
 
 .overlay::before{
