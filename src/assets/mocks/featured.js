@@ -2,10 +2,10 @@ import moment from 'moment'
 
 export default [
     {
-        title: 'the perfect car playlist',
+        title: 'the perfect morning playlist',
         date: moment().format('MMMM DD, YYYY'),
         categories: ['musings', 'playlists'],
-        link: '#',
+        link: '/playlists_morning',
         image: 'car.jpg'
     },
     {

@@ -1,0 +1,13 @@
+{
+    "configurations": [
+    {
+        "type": "node",
+        "request": "launch",
+        "name": "debug graphql",
+        "program": "${workspaceFolder}/graphql/app.js",
+        "skipFiles": [
+            "<node_internals>/**"
+        ]
+    }
+    ]
+}

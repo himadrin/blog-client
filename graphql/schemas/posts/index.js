@@ -21,8 +21,8 @@ const getPostsWithAuthors = cb =>
 
         return posts.map(({categories, author_id, ...rest}, index) => ({
             categories: categories.split(','),
-            author: authorMap[author_id],
-            ...rest
+            ...rest,
+            author: authorMap[author_id]
         }))
     }
 
@@ -33,8 +33,8 @@ module.exports = {
             getPostsByType: getPostsWithAuthors(
                 async ({type}) => await PostService.getPosts(type)  
             ),
-            getPostsByCategory: getPostsWithAuthors(
-                async ({category_id}) => await PostService.getPosts('default', category_id)
+            getPostsByCategories: getPostsWithAuthors(
+                async ({cat_ids}) => await PostService.getPosts('default', cat_ids)
             )
         }
     }, 

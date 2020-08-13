@@ -7,17 +7,32 @@ const navLinks = [
         title: 'home',
         path: '/'
     }, 
+
+ 
     {
-        title: 'blog',
-        path: '/blog'
+        title: 'musings',
+        path: '/musings'
+    },
+    /* 
+    {
+        title: 'playlists',
+        path: '/playlists'
     },
     {
-        title: 'contact us',
-        path: '/contact'
+        title: 'reviews',
+        path: '/reviews'
     },
     {
-        title: 'login',
-        path: '/login'
+        title: 'deep dives',
+        path: '/deep'
+    },
+    {
+        title: 'song recs',
+        path: '/recs'
+    },*/
+    {
+        title: 'about',
+        path: '/about'
     }
 ];
 
@@ -35,10 +50,12 @@ export default function Navigation({user}) {
                     </li>
                 ))}
             </ul>
+            {/*  
             <span className="menu-avatar-container">
                 <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38}/>
                 <span className="menu-avatar-name">{`${user.firstName}`}</span>
             </span>   
+            */}
         </div>
         <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)}></i>
     </nav>)
